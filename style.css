@@ -1,0 +1,172 @@
+body {
+  margin-top: 80px;
+  font-family: Inter;
+  color: hsl(240, 38%, 20%);
+}
+
+span {
+  color: hsl(240, 18%, 77%);
+  font-size: 50%;
+}
+
+p {
+  font-size: 130%;
+  font-weight: 300;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 120%;
+}
+
+img {
+  width: 75%;
+  margin: 60px 10px 10px 30px;
+  box-shadow: 0 0 10px #A0A0A0;
+}
+
+.text-container {
+  background: url("images/pattern-quotes.svg") no-repeat left 30% top;
+  padding: 50px 0 0 50px;
+  position: relative;
+  left: 100px;
+  top: 100px;
+}
+
+.bg-img {
+  background: url("images/pattern-bg.svg") no-repeat;
+  height: 500px;
+  background-size: contain;
+}
+
+.container-item {
+  background: url("images/pattern-curve.svg") no-repeat bottom left;
+}
+
+.button {
+  height: 10%;
+  width: 18%;
+  border-radius: 30px;
+  background-color: #fff;
+  position: relative;
+  left: 10%;
+  bottom: 8%;
+  box-shadow: 0 5px 30px #A0A0A0;
+}
+
+.prev-icon {
+  position: relative;
+  bottom: 50%;
+  left: 10%;
+  width: 100%;
+  box-shadow: none;
+}
+
+.next-icon {
+  position: relative;
+  bottom: 50%;
+  right: 140%;
+  width: 100%;
+  box-shadow: none;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.attribution {
+  padding: 50px;
+  font-size: 11px;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 991px) {
+
+  .prev-icon {
+    position: absolute;
+    bottom: 10px;
+  }
+
+  .next-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 3px;
+  }
+  .text-container {
+    padding: 10% 0 0 10%;
+    position: relative;
+    left: 10%;
+    top: 10%;
+  }
+
+  .button {
+    position: relative;
+    left: 20%;
+    bottom: 8%;
+  }
+
+  .prev-icon {
+    position: relative;
+    left: 10%;
+    bottom: 50%;
+    width: 100%;
+  }
+
+  .next-icon {
+    position: relative;
+    bottom: 50%;
+    right: 200%;
+    width: 100%;
+  }
+
+  span::before {
+    content: "\a";
+    white-space: pre;
+  }
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+  .text-container {
+    background: url("images/pattern-quotes.svg") no-repeat left 30% top 20%;
+    text-align: center;
+    order: 2;
+    padding: 20% 2% 20% 0;
+    position: relative;
+    left: -1%;
+    right: -1%;
+  }
+
+  .bg-img {
+    height: auto;
+    background-size: contain;
+  }
+  .container-item {
+    background-size: contain;
+  }
+
+  .next-icon {
+    position: relative;
+    bottom: 50%;
+    right: 160%;
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 525px) {
+  .prev-icon {
+    position: absolute;
+    left: -200%;
+    bottom: 3%;
+  }
+
+  .next-icon {
+    position: absolute;
+    right: 20%;
+    bottom: 3%;
+  }
+}
